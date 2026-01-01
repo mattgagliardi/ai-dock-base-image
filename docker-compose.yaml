@@ -11,9 +11,9 @@ services:
         CUDA_STRING: ${CUDA_STRING:-12.9.1-base}
         ROCM_STRING: ${ROCM_STRING:-5.7-runtime}
       tags:
-        - "ghcr.io/gitgud5000/base-image:${IMAGE_TAG:-v1-redo}"
+        - "mgagliardi/base-image:${IMAGE_TAG:-v1-redo}"
         
-    image: ghcr.io/gitgud5000/base-image:${IMAGE_TAG:-v1-redo}
+    image: mgagliardi/base-image:${IMAGE_TAG:-v1-redo}
     
     ## For Nvidia GPU's - Enabled for RTX 5090
     deploy:

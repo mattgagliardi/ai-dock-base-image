@@ -6,6 +6,13 @@ All ai-dock images are extended from this base image.
 
 This file should form the basis for the README.md for all extended images, with nothing but this introduction removed and additional features documented as required.
 
+## Important Notes:
+
+- This repo has some qualities (ex. needs `jq`, relies on symlinks) that more/less mean it needs to be cloned and run on Linux.
+- I built this using a `docker build` command: `docker build --build-arg CUDA_STRING=12.9.1-base -t mgagliardi/base-image:2026-01-01 .`
+  - The "normal" way to build this may be via `docker compose` but I'm actually more interested in steps/repos 2 and 3 to get a finished product.
+  - I pushed this to my Docker Hub via `docker image push mgagliardi/base-image:2026-01-01`
+
 ## Documentation
 
 All AI-Dock containers share a common base which is designed to make running on container-first cloud services such as [vast.ai](https://link.ai-dock.org/vast.ai) as straightforward and user friendly as possible.
